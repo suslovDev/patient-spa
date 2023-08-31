@@ -8,7 +8,7 @@ import { EventItem } from '../../../Events/EventList/EventItem';
 import classes from './EventList.module.scss';
 
 const EventList = (): JSX.Element => {
-    const [events, setEvents] = useState([]); 
+    const [events, setEvents] = useState([]);
 
     const { id } = useParams();
 

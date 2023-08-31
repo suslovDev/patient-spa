@@ -3,7 +3,18 @@ import Icon from '../../../UI/Icon/Icon';
 import classes from './EventItem.module.scss';
 
 
-const EventItem = ({ event, title, date, time }: { event: string, title: string, date: string, time: string }): JSX.Element => {
+const EventItem = (
+    {
+        event,
+        title,
+        date,
+        time
+    }: {
+        event: string,
+        title: string,
+        date: string,
+        time: string
+    }): JSX.Element => {
     return (
         <div className={classes.event}>
             <div className={classes.event__preview}>

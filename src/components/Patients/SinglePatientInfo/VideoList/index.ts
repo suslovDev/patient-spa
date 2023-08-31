@@ -1,1 +1,1 @@
-export { default as NoteList } from './VideoList';
+export { default as VideoList } from './VideoList';

@@ -12,7 +12,7 @@ const VideoItem = ({ url, title, author, dateRange }: { url: string, title: stri
                 <div className={classes.video__extra}>
                     <span>{author}</span>
                     <span>{dateRange}</span>
-                </div>
+                </div>  
             </div>
         </div>
     )

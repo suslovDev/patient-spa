@@ -6,7 +6,14 @@ import Counter from '../UI/Counter/Counter';
 
 import classes from './AsideActionPanel.module.scss';
 
-const AsideActionPanel = ({ toggleCheckbox, onEditMode }: { toggleCheckbox?: () => void, onEditMode?: (value: boolean) => void }): JSX.Element => {
+const AsideActionPanel = (
+    {
+        toggleCheckbox,
+        onEditMode
+    }: {
+        toggleCheckbox?: () => void,
+        onEditMode?: (value: boolean) => void
+    }): JSX.Element => {
     const [isEditMode, setIsEditMode] = useState<boolean>(false);
 
     const handleOnEdit = (): void => {

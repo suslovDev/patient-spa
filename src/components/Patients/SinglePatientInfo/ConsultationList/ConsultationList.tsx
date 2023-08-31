@@ -10,7 +10,7 @@ import classes from './ConsultationList.module.scss';
 const ConsultationList = (): JSX.Element => {
     const [consultations, setConsultations] = useState([]);
 
-    const { id } = useParams();
+    const { id } = useParams(); 
 
     useEffect(() => {
         const userConsultations = CONSULTATION.filter(item => item.userId === id);

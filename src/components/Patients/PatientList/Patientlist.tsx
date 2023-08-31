@@ -5,7 +5,15 @@ import { PatientPlate } from '../../PatientPlate';
 
 import classes from './PatientList.module.scss';
 
-const PatientList = ({ patients, isAllChecked, isEditMode }: { patients: IUserData[], isAllChecked: boolean, isEditMode: boolean }): JSX.Element => {
+const PatientList = ({
+    patients,
+    isAllChecked,
+    isEditMode
+}: {
+    patients: IUserData[],
+    isAllChecked: boolean,
+    isEditMode: boolean
+}): JSX.Element => {
 
     return (
         <div className={classes.patientList}>

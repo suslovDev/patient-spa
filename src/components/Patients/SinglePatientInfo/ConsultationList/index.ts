@@ -1,1 +1,1 @@
-export { default as NoteList } from './ConsultationList';
+export { default as ConsultationList } from './ConsultationList';

@@ -19,7 +19,7 @@ const PatientPlate = ({
     isChecked?: boolean;
     userData: IUserData;
 }): JSX.Element => {
-    const { firstName, secondName, avatarUrl } = userData;
+    const { firstName, secondName, avatarUrl } = userData; 
     return (
         <div className={cn(classes.patient, { [classes.active]: isActive })}>
             <div className={classes.patient__info}>

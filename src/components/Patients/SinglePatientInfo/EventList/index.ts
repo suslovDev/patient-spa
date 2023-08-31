@@ -1,1 +1,1 @@
-export { default as NoteList } from './EventList';
+export { default as EventList } from './EventList';

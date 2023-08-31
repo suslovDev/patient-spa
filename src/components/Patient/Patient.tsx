@@ -18,7 +18,7 @@ const Patient = ({ userData }: { userData?: IUserData }): JSX.Element => {
                 </div>
             </div>
             <Dropdown />
-        </div>
+        </div> 
     )
 }
 
