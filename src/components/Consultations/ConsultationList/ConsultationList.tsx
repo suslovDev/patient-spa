@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
-import { CONSULTATION } from '../../../../mock/consultation.mock';
-import { IConsultation } from '../../../../types/IConsultation';
-import { ConsultationItem } from '../../../Consultations/ConsultationList/ConsultationItem';
+import { CONSULTATION } from '../../../mock/consultation.mock';
+import { IConsultation } from '../../../types/IConsultation';
+import { ConsultationItem } from '../ConsultationItem';
 
 import classes from './ConsultationList.module.scss';
 

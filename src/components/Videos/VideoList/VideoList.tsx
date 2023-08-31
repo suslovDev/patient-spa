@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
-import { VIDEOS } from '../../../../mock/videos.mock';
-import { IVideo } from '../../../../types/IVideo';
-import { VideoItem } from '../../../Videos/VideoList/VideoItem';
+import { VIDEOS } from '../../../mock/videos.mock';
+import { IVideo } from '../../../types/IVideo';
+import { VideoItem } from '../VideoItem';
 
-import classes from './VideoList.module.scss'; 
+import classes from './VideoList.module.scss';
 
 const VideoList = (): JSX.Element => {
     const [videos, setVideos] = useState([]);

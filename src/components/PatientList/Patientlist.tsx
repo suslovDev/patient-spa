@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-import { IUserData } from '../../../types/IUserData';
-import { PatientPlate } from '../../PatientPlate';
+import { IUserData } from '../../types/IUserData';
+import { PatientPlate } from '../PatientPlate';
 
 import classes from './PatientList.module.scss';
 

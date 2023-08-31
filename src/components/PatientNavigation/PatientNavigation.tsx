@@ -1,4 +1,6 @@
-import { NavLink } from '../../UI/NavLink';
+
+
+import { NavLink } from '../UI/NavLink';
 
 import classes from './PatientNavigation.module.scss';
 

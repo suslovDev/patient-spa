@@ -1,5 +1,5 @@
-import {Dropdown} from "../Dropdown";
-import {WithBorder} from "../WithBorder";
+import {Dropdown} from "../../UI/Dropdown";
+import {WithBorder} from "../../UI/WithBorder";
 
 import classes from './Note.module.scss';
 
@@ -11,7 +11,7 @@ const Note = (
         imageUrl = null
     }: {
         date: string;
-        content: string;
+        content: string; 
         imageUrl?: string
     }
 ): JSX.Element => {

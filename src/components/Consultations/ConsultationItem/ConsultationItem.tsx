@@ -1,7 +1,7 @@
 import cn from 'classnames';
 
-import { IConsultation } from '../../../../types/IConsultation';
-import Icon from '../../../UI/Icon/Icon';
+import { IConsultation } from '../../../types/IConsultation';
+import Icon from '../../UI/Icon/Icon';
 
 import classes from './ConsultationItem.module.scss';
 

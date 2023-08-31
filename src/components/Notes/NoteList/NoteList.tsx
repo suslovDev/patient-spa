@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
-import { NOTES } from '../../../../mock/notes.mock';
-import { INote } from '../../../../types/INote';
-import { Note } from '../../../UI/Note';
+import { NOTES } from '../../../mock/notes.mock';
+import { INote } from '../../../types/INote';
+import { Note } from '../Note';
 
 import classes from './NoteList.module.scss';
 

@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
+import { AsideActionPanel } from '../../components/AsideActionPanel';
+import { Container } from '../../components/Layout/Container';
+import PatientList from '../../components/PatientList/Patientlist';
+import { SeachInput } from '../../components/UI/SearchInput';
 import { USERS } from '../../mock/users.mock';
-import { AsideActionPanel } from '../AsideActionPanel';
-import {Container} from '../Layout/Container';
-import { SeachInput } from '../UI/SearchInput';
 
-import PatientList from './PatientList/Patientlist';
-
-import classes from './Patients.module.scss';
+import classes from './PatientsPage.module.scss';
 
 const Patients = (): JSX.Element => {
     const [isAllChecked, setIsAllChecked] = useState<boolean>(false);

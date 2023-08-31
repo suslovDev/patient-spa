@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
-import { EVENTS } from '../../../../mock/events.mock';
-import { IEvent } from '../../../../types/IEvent';
-import { EventItem } from '../../../Events/EventList/EventItem';
+import { EVENTS } from '../../../mock/events.mock';
+import { IEvent } from '../../../types/IEvent';
+import { EventItem } from '../EventItem';
 
 import classes from './EventList.module.scss';
 
