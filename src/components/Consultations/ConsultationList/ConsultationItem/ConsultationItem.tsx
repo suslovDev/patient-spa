@@ -14,7 +14,8 @@ export interface IConsultation {
     time: string;
     isConfirmed: boolean;
     type: 'online' | 'privat';
-    userId: number;
+    userId: string;
+    uid: string; 
 }
 
 const ConsultationItem = ({ consultation }: { consultation: IConsultation }): JSX.Element => {

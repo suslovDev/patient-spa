@@ -11,14 +11,14 @@ const ConsultationList = (): JSX.Element => {
     const { id } = useParams();
 
     useEffect(() => {
-        const userConsultations = CONSULTATION.filter(item => item.userId === +id);
+        const userConsultations = CONSULTATION.filter(item => item.userId === id);
         setConsultations(userConsultations);
     }, [id])
 
     return (
         <div className={classes.list}>
             {consultations.map((consultation: IConsultation) => (
-                <ConsultationItem consultation={consultation} key={consultation.userId} />
+                <ConsultationItem consultation={consultation} key={consultation.uid} />
             ))}
         </div>
     )

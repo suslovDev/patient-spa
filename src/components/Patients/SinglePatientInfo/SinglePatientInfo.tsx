@@ -18,7 +18,7 @@ const SinglePatientInfo = (): JSX.Element => {
 
 
     useEffect(() => {
-        const user = USERS.find(user => user.id === +id);
+        const user = USERS.find(user => user.id === id);
         setPatientData(user);
     }, [id])
 

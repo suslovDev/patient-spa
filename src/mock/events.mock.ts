@@ -1,161 +1,179 @@
-export interface IEvent {
-    event: string;
-    title: string;
-    date: string;
-    time: string;
-    userId: number;
-}
+import uniqid from 'uniqid';
+import { IEvent } from '../types/IEvent';
+
 
 export const EVENTS: IEvent[] = [
     {
-        userId: 1,
+        uid: uniqid(),
+        userId: '1',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 2,
+        uid: uniqid(),
+        userId: '2',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 2,
+        uid: uniqid(),
+        userId: '2',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 2,
+        uid: uniqid(),
+        userId: '2',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 2,
+        uid: uniqid(),
+        userId: '2',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 3,
+        uid: uniqid(),
+        userId: '3',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 3,
+        uid: uniqid(),
+        userId: '3',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 4,
+        uid: uniqid(),
+        userId: '4',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 4,
+        uid: uniqid(),
+        userId: '4',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 5,
+        uid: uniqid(),
+        userId: '5',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 6,
+        uid: uniqid(),
+        userId: '6',
         event: 'Вебинар',
         time: '15:30',
         date: '02 сентября 2023',
         title: 'Собеседование в NiceCode'
     },
     {
-        userId: 7,
+        uid: uniqid(),
+        userId: '7',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 7,
+        uid: uniqid(),
+        userId: '7',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 8,
+        uid: uniqid(),
+        userId: '8',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 9,
+        uid: uniqid(),
+        userId: '9',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 10,
+        uid: uniqid(),
+        userId: '10',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 10,
+        uid: uniqid(),
+        userId: '10',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 10,
+        uid: uniqid(),
+        userId: '10',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 11,
+        uid: uniqid(),
+        userId: '11',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 11,
+        uid: uniqid(),
+        userId: '11',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 12,
+        uid: uniqid(),
+        userId: '12',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',
         title: 'Тяга резинки в шаге со сгибанием локтя под 90 градусов'
     },
     {
-        userId: 12,
+        uid: uniqid(),
+        userId: '12',
         event: 'Вебинар',
         time: '17:00',
         date: '9 марта 2021',

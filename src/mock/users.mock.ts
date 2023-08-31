@@ -1,9 +1,11 @@
 import { IUserData } from "../types/IUserData"
+import uniqid from 'uniqid';
 
 
 export const USERS: IUserData[] = [
     {
-        id: 1,
+        uid: uniqid(),
+        id: '1',
         firstName: "Кравцова",
         secondName: "Александра",
         lastName: "Фронтендовна",
@@ -12,7 +14,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_1.png"
     },
     {
-        id: 2,
+        uid: uniqid(),
+        id: '2',
         firstName: "Рожков",
         secondName: "Денис",
         lastName: "Петрович",
@@ -21,7 +24,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_2.png"
     },
     {
-        id: 3,
+        uid: uniqid(),
+        id: '3',
         firstName: "Кравцова",
         secondName: "Александра",
         lastName: "Фронтендовна",
@@ -30,7 +34,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_3.png"
     },
     {
-        id: 4,
+        uid: uniqid(),
+        id: '4',
         firstName: "Диброва",
         secondName: "Алевтина",
         lastName: "Реактовна",
@@ -39,7 +44,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_4.png"
     },
     {
-        id: 5,
+        uid: uniqid(),
+        id: '5',
         firstName: "Иванов",
         secondName: "Дмитрий",
         lastName: "Вебпакович",
@@ -48,7 +54,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_5.png"
     },
     {
-        id: 6,
+        uid: uniqid(),
+        id: '6',
         firstName: "Суслов",
         secondName: "Александр",
         lastName: "Юрьевич",
@@ -57,7 +64,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_6.jpg"
     },
     {
-        id: 7,
+        uid: uniqid(),
+        id: '7',
         firstName: "Форс",
         secondName: "Александр",
         lastName: "Тайпскриптович",
@@ -66,7 +74,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_7.png"
     },
     {
-        id: 8,
+        uid: uniqid(),
+        id: '8',
         firstName: "Ахмедов",
         secondName: "Артур",
         lastName: "Джаваскриптович",
@@ -75,7 +84,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_8.png"
     },
     {
-        id: 9,
+        uid: uniqid(),
+        id: '9',
         firstName: "Блажевич",
         secondName: "Игорь",
         lastName: "Бэмович",
@@ -84,7 +94,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_9.png"
     },
     {
-        id: 10,
+        uid: uniqid(),
+        id: '10',
         firstName: "Валиева",
         secondName: "Руфина",
         lastName: "Сиэсэсовна",
@@ -93,7 +104,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_10.png"
     },
     {
-        id: 11,
+        uid: uniqid(),
+        id: '11',
         firstName: "Волошина",
         secondName: "Виктория",
         lastName: "Редаксовна",
@@ -102,7 +114,8 @@ export const USERS: IUserData[] = [
         avatarUrl: "/images/user.mock_11.png"
     },
     {
-        id: 12,
+        uid: uniqid(),
+        id: '12',
         firstName: "Волошина",
         secondName: "Виктория",
         lastName: "Промисовна",

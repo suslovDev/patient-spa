@@ -1,8 +1,10 @@
 import { IConsultation } from "../components/Consultations/ConsultationList/ConsultationItem/ConsultationItem";
+import uniqid from 'uniqid';
 
 export const CONSULTATION: IConsultation[] = [
     {
-        userId: 1,
+        uid: uniqid(),
+        userId: '1',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: true,
@@ -10,15 +12,16 @@ export const CONSULTATION: IConsultation[] = [
         type: 'online',
     },
     {
-        userId: 1,
+        uid: uniqid(),
+        userId: '1',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
         isConfirmed: true,
         type: 'online',
-    },
-    {
-        userId: 2,
+    },{
+        uid: uniqid(),
+        userId: '2',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: true,
@@ -26,7 +29,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'online',
     },
     {
-        userId: 2,
+        uid: uniqid(),
+        userId: '2',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -34,7 +38,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'online',
     },
     {
-        userId: 2,
+        uid: uniqid(),
+        userId: '2',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -42,7 +47,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'privat',
     },
     {
-        userId: 3,
+        uid: uniqid(),
+        userId: '3',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -50,7 +56,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'privat',
     },
     {
-        userId: 4,
+        uid: uniqid(),
+        userId: '4',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -58,7 +65,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'privat',
     },
     {
-        userId: 5,
+        uid: uniqid(),
+        userId: '5',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -66,7 +74,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'privat',
     },
     {
-        userId: 6,
+        uid: uniqid(),
+        userId: '6',
         date: '01.09.2023',
         time: '12:30-14:00',
         isActive: true,
@@ -74,7 +83,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'online',
     },
     {
-        userId: 7,
+        uid: uniqid(),
+        userId: '7',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -82,7 +92,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'online',
     },
     {
-        userId: 8,
+        uid: uniqid(),
+        userId: '8',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -90,7 +101,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'online',
     },
     {
-        userId: 9,
+        uid: uniqid(),
+        userId: '9',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -98,7 +110,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'online',
     },
     {
-        userId: 9,
+        uid: uniqid(),
+        userId: '9',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -106,7 +119,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'privat',
     },
     {
-        userId: 10,
+        uid: uniqid(),
+        userId: '10',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -114,7 +128,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'privat',
     },
     {
-        userId: 11,
+        uid: uniqid(),
+        userId: '11',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,
@@ -122,7 +137,8 @@ export const CONSULTATION: IConsultation[] = [
         type: 'privat',
     },
     {
-        userId: 12,
+        uid: uniqid(),
+        userId: '12',
         date: '15.01.2019',
         time: '12:30-13:00',
         isActive: false,

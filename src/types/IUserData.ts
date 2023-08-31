@@ -1,7 +1,8 @@
 export type TUserSex = 'муж' | 'жен'
 
 export interface IUserData {
-    id: number;
+    uid: string;
+    id: string;
     firstName: string;
     secondName: string;
     lastName: string;
