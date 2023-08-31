@@ -1,7 +1,8 @@
 import Icon from '../Icon/Icon';
+
 import classes from './SearchInput.module.scss';
 
-const SearchInput = () => {
+const SearchInput = (): JSX.Element => {
     return (
         <div className={classes.search}>
             <div className={classes.search__icon}><Icon name='search' /></div>

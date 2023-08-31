@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 export const HomePage = (): JSX.Element => {
     return (
         <>
-            <Link to='/clients'><div style={{fontSize: '30px', display: 'inline-block', padding: '30px', borderRadius: '10px', backgroundColor: "yellow", cursor: "pointer"}}>Посмотреть работу</div></Link>
+            <Link to='/clients'><div style={{ fontSize: '30px', display: 'inline-block', padding: '30px', borderRadius: '10px', backgroundColor: "yellow", cursor: "pointer" }}>Посмотреть работу</div></Link>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                Выкладываю "Как есть", чтобы уложиться в дедлайн)
+                {/* <p>Выкладываю 'Как есть', чтобы уложиться в дедлайн</p> */}
                 <br />
                 На данный момент на проект порачено часов: 14
                 <br />

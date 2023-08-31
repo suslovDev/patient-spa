@@ -1,4 +1,5 @@
 import { PatientNavigation } from '../PatientNavigation';
+
 import classes from './NavbarWithAction.module.scss';
 
 const NavbarWithAction = (): JSX.Element => {

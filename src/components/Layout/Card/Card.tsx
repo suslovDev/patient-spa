@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
-import classes from './Card.module.scss';
 import cn from 'classnames';
+
+import classes from './Card.module.scss';
 
 export type TCardColor = 'white' | 'gray';
 

@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
+
 import { IUserData } from '../../../types/IUserData';
 import { PatientPlate } from '../../PatientPlate';
-import classes from './PatientList.module.scss';
 
-import { Link } from 'react-router-dom';
+import classes from './PatientList.module.scss';
 
 const PatientList = ({ patients, isAllChecked, isEditMode }: { patients: IUserData[], isAllChecked: boolean, isEditMode: boolean }): JSX.Element => {
 

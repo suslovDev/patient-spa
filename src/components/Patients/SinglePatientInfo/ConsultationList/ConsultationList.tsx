@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
+
 import { CONSULTATION } from '../../../../mock/consultation.mock';
-import classes from './ConsultationList.module.scss';
 import { ConsultationItem } from '../../../Consultations/ConsultationList/ConsultationItem';
 import { IConsultation } from '../../../Consultations/ConsultationList/ConsultationItem/ConsultationItem';
-import { useParams } from 'react-router';
+
+import classes from './ConsultationList.module.scss';
 
 const ConsultationList = (): JSX.Element => {
     const [consultations, setConsultations] = useState([]);

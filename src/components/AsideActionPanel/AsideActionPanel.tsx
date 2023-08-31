@@ -1,18 +1,20 @@
 import { useState } from 'react';
+
 import Button from '../UI/AddButton/Button';
-import Counter from '../UI/Counter';
-import classes from './AsideActionPanel.module.scss';
 import Checkbox from '../UI/Checkbox/Checkbox';
+import Counter from '../UI/Counter';
+
+import classes from './AsideActionPanel.module.scss';
 
 const AsideActionPanel = ({ toggleCheckbox, onEditMode }: { toggleCheckbox?: () => void, onEditMode?: (value: boolean) => void }): JSX.Element => {
     const [isEditMode, setIsEditMode] = useState<boolean>(false);
 
-    const handleOnEdit = () => {
+    const handleOnEdit = (): void => {
         setIsEditMode(true);
         onEditMode(true);
     }
 
-    const handleOffEdit = () => {
+    const handleOffEdit = (): void => {
         setIsEditMode(false);
         onEditMode(false);
     }

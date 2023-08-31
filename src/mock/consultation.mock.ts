@@ -1,5 +1,6 @@
-import { IConsultation } from "../components/Consultations/ConsultationList/ConsultationItem/ConsultationItem";
 import uniqid from 'uniqid';
+
+import { IConsultation } from "../components/Consultations/ConsultationList/ConsultationItem/ConsultationItem";
 
 export const CONSULTATION: IConsultation[] = [
     {

@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
-import classes from './NoteList.module.scss';
-import { Note } from '../../../UI/Note';
-import { NOTES } from '../../../../mock/notes.mock';
 import { useParams } from 'react-router';
+
+import { NOTES } from '../../../../mock/notes.mock';
 import { INote } from '../../../../types/INote';
+import { Note } from '../../../UI/Note';
+
+import classes from './NoteList.module.scss';
 
 const NoteList = (): JSX.Element => {
     const [notes, setNotes] = useState([]);

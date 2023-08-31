@@ -1,6 +1,6 @@
-import { useMatch } from 'react-router';
-import classes from './PatientNavigation.module.scss';
 import { NavLink } from '../../UI/NavLink';
+
+import classes from './PatientNavigation.module.scss';
 
 const PatientNavigation = (): JSX.Element => {
 

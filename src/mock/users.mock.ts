@@ -1,5 +1,6 @@
-import { IUserData } from "../types/IUserData"
 import uniqid from 'uniqid';
+
+import { IUserData } from "../types/IUserData"
 
 
 export const USERS: IUserData[] = [

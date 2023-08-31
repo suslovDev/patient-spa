@@ -5,9 +5,10 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin"
 export const buildLoaders = ({ isDev }: BuildOptions): RuleSetRule[] => {
     const typescriptLoader = {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: ['ts-loader', 'eslint-loader'],
         exclude: /node_modules/,
     }
+
 
     const cssLoader = {
         test: /\.s[ac]ss$/i,

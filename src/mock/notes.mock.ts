@@ -1,4 +1,5 @@
 import uniqid from 'uniqid';
+
 import { INote } from '../types/INote';
 
 
@@ -99,5 +100,5 @@ export const NOTES: INote[] = [
         imageUrl: "/images/image.mock.png"
     },
 
-
+  
 ]

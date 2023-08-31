@@ -1,6 +1,7 @@
-import { ReactElement } from 'react';
-import classes from './Button.module.scss';
+
 import Icon from '../Icon/Icon';
+
+import classes from './Button.module.scss';
 
 
 export type TButtonVariant = 'standart' | 'add'

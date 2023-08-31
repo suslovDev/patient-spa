@@ -1,7 +1,8 @@
-import classes from './ConsultationItem.module.scss';
+import cn from 'classnames';
+
 import Icon from '../../../UI/Icon/Icon';
 
-import cn from 'classnames';
+import classes from './ConsultationItem.module.scss';
 
 export enum EConsultationType {
     online = 'Online консультация',

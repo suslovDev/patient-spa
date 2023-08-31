@@ -1,8 +1,10 @@
 import { ReactElement } from 'react';
-import classes from './PatientPlate.module.scss';
 import cn from 'classnames';
+
 import { IUserData } from '../../types/IUserData';
 import Checkbox from '../UI/Checkbox/Checkbox';
+
+import classes from './PatientPlate.module.scss';
 
 const PatientPlate = ({
     hasCheckbox = false,
@@ -21,7 +23,7 @@ const PatientPlate = ({
     return (
         <div className={cn(classes.patient, { [classes.active]: isActive })}>
             <div className={classes.patient__info}>
-                {hasCheckbox && <Checkbox />}
+                {hasCheckbox && <Checkbox checked={isChecked} />}
                 <div className={classes.patient__avatar}><img src={avatarUrl} alt="Patient avatar" /></div>
                 <p className={classes.patient__name}>{`${firstName} ${secondName}`}</p>
             </div>

@@ -1,5 +1,6 @@
-import classes from './Counter.module.scss';
 import cn from 'classnames';
+
+import classes from './Counter.module.scss';
 
 const Counter = ({ count, isActive = false }: { count: number, isActive?: boolean }): JSX.Element => {
     return (

@@ -1,19 +1,21 @@
 import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+
 import { USERS } from '../../mock/users.mock';
 import { AsideActionPanel } from '../AsideActionPanel';
 import Container from '../Layout/Container/Container';
 import { SeachInput } from '../UI/SearchInput';
+
 import PatientList from './PatientList/Patientlist';
+
 import classes from './Patients.module.scss';
-import { SinglePatientInfo } from './SinglePatientInfo';
-import { Outlet } from 'react-router-dom';
 
 const Patients = (): JSX.Element => {
     const [isAllChecked, setIsAllChecked] = useState<boolean>(false);
     const [showCheckboxes, setShowCheckboxes] = useState<boolean>(false);
 
     const handleCheckedAll = (): void => {
-
+        return null;
     }
     return (
         <>

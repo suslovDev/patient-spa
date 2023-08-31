@@ -1,4 +1,5 @@
 import Icon from '../../../UI/Icon/Icon';
+
 import classes from './EventItem.module.scss';
 
 
