@@ -9,8 +9,8 @@ const PatientList = ({ patients, isAllChecked, isEditMode }: { patients: IUserDa
     return (
         <div className={classes.patientList}>
             {patients.map((patient: IUserData) => (
-                <Link to={String(patient.id)}>
-                    <PatientPlate userData={patient} key={patient.uid} isChecked={isAllChecked} hasCheckbox={isEditMode} />
+                <Link to={String(patient.id)} key={patient.uid}>
+                    <PatientPlate userData={patient} isChecked={isAllChecked} hasCheckbox={isEditMode} />
                 </Link>
             ))}
         </div>

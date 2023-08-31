@@ -39,7 +39,7 @@ export const NOTES: INote[] = [
         userId: '5',
         date: '20.12.2019',
         content: 'Улучшенное питание мышечной ткани ускоряет замещение различных посттравматических дефектов в самих мышцах, костной ткани, связках и сухожилиях.',
-        imageUrl: "/ images/image.mock.png"
+        imageUrl: "/images/image.mock.png"
     },
     {
         uid: uniqid(),
