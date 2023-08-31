@@ -1,4 +1,4 @@
-import { AppRoutes } from './AppRoutes';
+import { AppRoutes } from './pages';
 
 import './styles/index.scss';
 

@@ -1,3 +1,4 @@
+import { ReactElement } from 'react';
 import { Route, Routes } from 'react-router';
 
 import { ConsultationList } from '../components/Consultations/ConsultationList';
@@ -5,11 +6,12 @@ import { EventList } from '../components/Events/EventList';
 import { NoteList } from '../components/Notes/NoteList';
 import { SinglePatientInfo } from '../components/SinglePatientInfo';
 import { VideoList } from '../components/Videos/VideoList';
-import { HomePage } from '../pages/HomePage';
-import { PatientsPage } from '../pages/PatientsPage';
+
+import { HomePage } from './HomePage';
+import { PatientsPage } from './PatientsPage';
 
 
-export const AppRoutes = () => (
+export const AppRoutes = (): ReactElement => (
     <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="clients/" element={<PatientsPage />}>
