@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import Button from '../UI/AddButton/Button';
 import Checkbox from '../UI/Checkbox/Checkbox';
-import Counter from '../UI/Counter';
+import Counter from '../UI/Counter/Counter';
 
 import classes from './AsideActionPanel.module.scss';
 

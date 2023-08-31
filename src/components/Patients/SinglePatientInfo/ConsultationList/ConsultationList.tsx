@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
 import { CONSULTATION } from '../../../../mock/consultation.mock';
+import { IConsultation } from '../../../../types/IConsultation';
 import { ConsultationItem } from '../../../Consultations/ConsultationList/ConsultationItem';
-import { IConsultation } from '../../../Consultations/ConsultationList/ConsultationItem/ConsultationItem';
 
 import classes from './ConsultationList.module.scss';
 
@@ -26,4 +26,4 @@ const ConsultationList = (): JSX.Element => {
     )
 }
 
-export default ConsultationList;
+export default ConsultationList; 

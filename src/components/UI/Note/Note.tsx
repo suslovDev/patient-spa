@@ -1,8 +1,7 @@
-import Dropdown from "../Dropdown";
-import WithBorder from "../WithBorder";
+import {Dropdown} from "../Dropdown";
+import {WithBorder} from "../WithBorder";
 
 import classes from './Note.module.scss';
-
 
 
 const Note = (

@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import cn from 'classnames';
 
 import { IUserData } from '../../types/IUserData';
-import Checkbox from '../UI/Checkbox/Checkbox';
+import { Checkbox } from '../UI/Checkbox';
 
 import classes from './PatientPlate.module.scss';
 

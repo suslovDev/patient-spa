@@ -1,6 +1,6 @@
 import { IUserData } from "../../types/IUserData";
 import { ageString } from "../../utils";
-import Dropdown from "../UI/Dropdown";
+import { Dropdown } from "../UI/Dropdown";
 
 import classes from './Patient.module.scss';
 

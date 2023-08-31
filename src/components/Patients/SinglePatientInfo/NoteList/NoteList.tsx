@@ -12,7 +12,7 @@ const NoteList = (): JSX.Element => {
 
     const { id } = useParams();
 
-    useEffect(() => {
+    useEffect(() => { 
         const userNotes = NOTES.filter(item => item.userId === id);
         setNotes(userNotes);
     }, [id])

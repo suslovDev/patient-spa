@@ -1,9 +1,10 @@
 import { ReactNode } from 'react';
 import cn from 'classnames';
 
+import { TCardColor } from '../../../types/TCardColor';
+
 import classes from './Card.module.scss';
 
-export type TCardColor = 'white' | 'gray';
 
 const Card = ({ cardColor = 'white', children }: { cardColor?: TCardColor, children: ReactNode }): JSX.Element => {
     return (

@@ -18,4 +18,4 @@ const VideoItem = ({ url, title, author, dateRange }: { url: string, title: stri
     )
 }
 
-export default VideoItem;
+export default VideoItem; 

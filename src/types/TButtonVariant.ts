@@ -1,0 +1,1 @@
+export type TButtonVariant = 'standart' | 'add';

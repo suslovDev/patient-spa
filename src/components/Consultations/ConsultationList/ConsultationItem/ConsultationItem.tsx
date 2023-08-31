@@ -1,5 +1,6 @@
 import cn from 'classnames';
 
+import { IConsultation } from '../../../../types/IConsultation';
 import Icon from '../../../UI/Icon/Icon';
 
 import classes from './ConsultationItem.module.scss';
@@ -9,15 +10,6 @@ export enum EConsultationType {
     privat = 'Личный прием'
 }
 
-export interface IConsultation {
-    isActive: boolean;
-    date: string;
-    time: string;
-    isConfirmed: boolean;
-    type: 'online' | 'privat';
-    userId: string;
-    uid: string; 
-}
 
 const ConsultationItem = ({ consultation }: { consultation: IConsultation }): JSX.Element => {
     const { isActive, type, date, time, isConfirmed } = consultation;

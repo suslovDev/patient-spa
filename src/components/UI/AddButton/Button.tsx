@@ -1,10 +1,9 @@
 
+import { TButtonVariant } from '../../../types/TButtonVariant';
 import Icon from '../Icon/Icon';
 
 import classes from './Button.module.scss';
 
-
-export type TButtonVariant = 'standart' | 'add'
 
 const Button = ({ children, variant = 'standart', handleClick = () => null }: { children: string, variant?: TButtonVariant, handleClick?: () => void }): JSX.Element => {
     return (

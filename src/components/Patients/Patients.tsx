@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 import { USERS } from '../../mock/users.mock';
 import { AsideActionPanel } from '../AsideActionPanel';
-import Container from '../Layout/Container/Container';
+import {Container} from '../Layout/Container';
 import { SeachInput } from '../UI/SearchInput';
 
 import PatientList from './PatientList/Patientlist';
