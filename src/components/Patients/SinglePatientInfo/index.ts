@@ -1,0 +1,1 @@
+export { default as SinglePatientInfo } from './SinglePatientInfo';

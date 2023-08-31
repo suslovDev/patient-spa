@@ -1,0 +1,11 @@
+@import "reset.scss";
+@import "variables/global";
+
+body {
+    background-color: var(--bg-color-main);
+}
+
+.app {
+    font-family: var(--font-family-main);
+    color: var(--font-color-main);
+}

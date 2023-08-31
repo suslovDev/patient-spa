@@ -1,0 +1,28 @@
+.checkbox {
+    display: flex;
+
+    &__input {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    &__box {
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        background: #fff;
+        border: 1px solid #CDCDCD;
+        border-radius: 4px;
+        padding: 4px;
+    }
+
+    &__active {
+        border-color: #4198C5;
+        background: #4198C5;
+    }
+}

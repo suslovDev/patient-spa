@@ -1,0 +1,38 @@
+.event {
+    display: flex;
+    gap: 10px;
+    width: 724px;
+    height: 66px;
+    border: 1px solid var(--stroke-color-default);
+    border-radius: 4px;
+    padding: 10px;
+
+    &__preview {
+        display: flex;
+        width: 82px;
+        height: 46px;
+        border-radius: 2px;
+    }
+
+    &__content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: var(--font-size-14);
+    }
+
+    &__info {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__infoDetail {
+        display: flex;
+        gap: 6px;
+        font-size: var(--font-size-12);
+    }
+}

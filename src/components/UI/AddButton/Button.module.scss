@@ -1,0 +1,19 @@
+.button {
+    height: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 25px;
+    cursor: pointer;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: var(--font-size-14);
+        color: var(--font-color-digits);
+    }
+}

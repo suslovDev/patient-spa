@@ -1,0 +1,13 @@
+.patientInfo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.listContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

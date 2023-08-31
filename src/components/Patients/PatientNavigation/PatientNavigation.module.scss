@@ -1,0 +1,16 @@
+.patientNavigation {
+    display: flex;
+
+    &__link {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        a {
+            color: var(--font-color-digits);
+        }
+    }
+
+    &__link:not(:last-child) {
+        border-right: 1px solid var(--font-color-digits);
+    }
+}

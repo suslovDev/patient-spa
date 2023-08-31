@@ -1,0 +1,54 @@
+.patient {
+    height: 110px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(51, 51, 51, 0.30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 16px 10px;
+    font-family: var(--font-family-main);
+
+    &__info {
+        display: flex;
+        gap: 14px;
+    }
+
+    &__avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+    &__action {
+        display: flex;
+        align-self: flex-start;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+
+    .patientTextInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        &__name {
+            font-size: var(--font-size-16);
+        }
+
+        &__extraInfo {
+            font-size: var(--font-size-14);
+        }
+    }
+}

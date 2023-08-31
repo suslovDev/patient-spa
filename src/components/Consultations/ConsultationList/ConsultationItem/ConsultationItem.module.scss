@@ -1,0 +1,55 @@
+.consultation {
+    display: flex;
+    width: 724px;
+    height: 66px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    padding: 11px 10px 8px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    &__icon {}
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        font-size: var(--font-size-14);
+    }
+
+    &__title {
+        font-size: var(--font-size-16);
+    }
+
+    &__date {
+        color: var(--font-color-digits);
+    }
+
+    &__notConfirmed {
+        color: #f00;
+        align-self: flex-end;
+        margin-left: auto;
+    }
+}
+
+.active {
+    border-color: var(--stroke-color-active);
+}
+
+
+
+
+
+
+
+
+/* 
+<div className={classes.consultation}>
+<div className={classes.consultation__icon}></div>
+<div className={classes.consultation__info}>
+    <p className={classes.consultation__title}></p>
+    <span className={classes.consultation__date}></span>
+</div>
+</div> */

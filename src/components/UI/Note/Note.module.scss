@@ -1,0 +1,26 @@
+.note {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 744px;
+    padding: 13px 16px 10px;
+
+    &__article {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: var(--font-size-14);
+    }
+
+    &__content {
+        width: 680px;
+        line-height: 24px;
+    }
+
+    &__date {
+        color: var(--font-color-digits);
+        padding-right: 6px;
+    }
+
+    &__img {}
+}
