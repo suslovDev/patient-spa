@@ -3,7 +3,7 @@ import { Outlet, useParams } from 'react-router';
 
 import { useActivePath } from '../../hooks/useActivePath';
 import { USERS } from '../../mock/users.mock';
-import { IUserData } from '../../types/IUserData';
+import { IUserData } from '../../types/IUserData';  
 import { Card } from '../Layout/Card';
 import { Patient } from '../Patient';
 import { PatientNavigation } from '../PatientNavigation';

@@ -5,7 +5,7 @@ import Icon from '../../UI/Icon/Icon';
 
 import classes from './ConsultationItem.module.scss';
 
-export enum EConsultationType {
+export enum EConsultation {
     online = 'Online консультация',
     privat = 'Личный прием'
 }
@@ -24,7 +24,7 @@ const ConsultationItem = ({ consultation }: { consultation: IConsultation }): JS
                 {defaultPrivat && <Icon name='privatDefault' />}
             </div>
             <div className={classes.consultation__info}>
-                <p className={classes.consultation__title}>{EConsultationType[type]}</p>
+                <p className={classes.consultation__title}>{EConsultation[type]}</p>
                 <span className={classes.consultation__date}>
                     {`${date}, ${time}`}
                 </span>
