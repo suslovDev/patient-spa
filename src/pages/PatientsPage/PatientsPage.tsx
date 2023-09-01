@@ -5,6 +5,7 @@ import { AsideActionPanel } from '../../components/AsideActionPanel';
 import { Container } from '../../components/Layout/Container';
 import PatientList from '../../components/PatientList/Patientlist';
 import { SeachInput } from '../../components/UI/SearchInput';
+import { useActivePath } from '../../hooks/useActivePath';
 import { USERS } from '../../mock/users.mock';
 
 import classes from './PatientsPage.module.scss';
@@ -13,12 +14,7 @@ const Patients = (): JSX.Element => {
     const [isAllChecked, setIsAllChecked] = useState<boolean>(false);
     const [showCheckboxes, setShowCheckboxes] = useState<boolean>(false);
 
-    const navigate = useNavigate();
-    const firstActivePath = USERS[0].id;
-
-    useEffect(() => {
-        navigate(firstActivePath);
-    }, []);
+    useActivePath(USERS[0].id);
 
 
     const handleCheckedAll = (): void => {

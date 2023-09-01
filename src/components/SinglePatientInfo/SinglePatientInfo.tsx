@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Outlet, useNavigate, useParams } from 'react-router';
 
+import { useActivePath } from '../../hooks/useActivePath';
 import { USERS } from '../../mock/users.mock';
 import { IUserData } from '../../types/IUserData';
 import { Card } from '../Layout/Card';
@@ -14,13 +15,7 @@ const SinglePatientInfo = (): JSX.Element => {
 
     const { id } = useParams();
 
-    const navigate = useNavigate();
-    const firstActivePath = 'notes';
-
-    useEffect(() => {
-        navigate(firstActivePath);
-    }, [id]);
-
+    useActivePath('notes', [id]);
 
     useEffect(() => {
         const currentUser = USERS.find(user => user.id === id);
