@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Outlet, useNavigate, useParams } from 'react-router';
+import { Outlet, useParams } from 'react-router';
 
 import { useActivePath } from '../../hooks/useActivePath';
 import { USERS } from '../../mock/users.mock';

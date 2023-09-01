@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
 import { AsideActionPanel } from '../../components/AsideActionPanel';
 import { Container } from '../../components/Layout/Container';
@@ -13,12 +13,13 @@ import classes from './PatientsPage.module.scss';
 const Patients = (): JSX.Element => {
     const [isAllChecked, setIsAllChecked] = useState<boolean>(false);
     const [showCheckboxes, setShowCheckboxes] = useState<boolean>(false);
+    const [checkedCount, setCheckedCount] = useState<number>(0);
 
     useActivePath(USERS[0].id);
 
 
     const handleCheckedAll = (): void => {
-        return null;
+        setIsAllChecked(!isAllChecked);
     }
     return (
         <>
@@ -27,8 +28,8 @@ const Patients = (): JSX.Element => {
                 <div className={classes.patientsPage}>
                     <div className={classes.patientsPage__aside}>
                         <SeachInput />
-                        <AsideActionPanel onEditMode={setShowCheckboxes} toggleCheckbox={handleCheckedAll} />
-                        <PatientList patients={USERS} isAllChecked={isAllChecked} isEditMode={showCheckboxes} />
+                        <AsideActionPanel onEditMode={setShowCheckboxes} isAllChecked={isAllChecked} toggleCheckbox={handleCheckedAll} checkedCount={checkedCount} />
+                        <PatientList patients={USERS} isAllChecked={isAllChecked} isEditMode={showCheckboxes} onSetCount={setCheckedCount} />
                     </div>
                     <div className={classes.patientsPage__content}>
                         <Outlet />

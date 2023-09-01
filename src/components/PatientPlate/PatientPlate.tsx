@@ -21,13 +21,13 @@ const PatientPlate = ({
     isChecked?: boolean;
     userData: IUserData;
 }): JSX.Element => {
-    const { firstName, secondName, avatarUrl } = userData;
+    const { firstName, secondName, avatarUrl, uid } = userData;
 
 
     return (
         <div className={cn(classes.patient, { [classes.active]: isActive })}>
             <div className={classes.patient__info}>
-                {hasCheckbox && <Checkbox checked={isChecked} onSetChecked={onSetChecked} />}
+                {hasCheckbox && <Checkbox checked={isChecked} onSetChecked={() => onSetChecked(uid)} />}
                 <div className={classes.patient__avatar}><img src={avatarUrl} alt="Patient avatar" /></div>
                 <p className={classes.patient__name}>{`${firstName} ${secondName}`}</p>
             </div>

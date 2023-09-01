@@ -1,5 +1,5 @@
 
-import { ReactElement, useState } from "react";
+import { ReactElement } from "react";
 import cn from 'classnames';
 
 import classes from './Checkbox.module.scss';

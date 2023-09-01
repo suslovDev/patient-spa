@@ -9,37 +9,58 @@ import classes from './PatientList.module.scss';
 const PatientList = ({
     patients,
     isAllChecked,
-    isEditMode
+    isEditMode,
+    onSetCount
 }: {
     patients: IUserData[],
     isAllChecked: boolean,
-    isEditMode: boolean
+    isEditMode: boolean,
+    onSetCount: (count: number) => void
 }): JSX.Element => {
 
-    const [data, setData] = useState(patients);
+    const [patientsData, setPatientsData] = useState(patients);
     useEffect(() => {
-        const withChecked = data?.map((user: any) => {
-            return { ...user, checked: false }
+        const withChecked = patientsData?.map((p) => {
+            return { ...p, checked: isAllChecked }
         });
-        setData(withChecked);
-    }, [])
+        setPatientsData(withChecked);
+    }, [isAllChecked]);
 
-    const handleCheck = (): void => {
-        return null;
+    useEffect(() => {
+        //@ts-ignore
+        const checkedCount = patientsData.reduce((acc, item) => item.checked ? acc + 1 : acc, 0);
+        onSetCount(checkedCount);
+    });
+
+
+
+    const handleCheck = (id: string): void => {
+        const updatedData = patientsData.map(p => {
+            //@ts-ignore
+            return p.uid !== id ? p : { ...p, checked: !p.checked }
+        })
+        setPatientsData(updatedData);
     }
-
 
 
     return (
         <div className={classes.patientList}>
-            {data.map((patient: any) => (
+            {patientsData.map((patient: any) => (
                 isEditMode
                     ?
-                    (<PatientPlate userData={patient} isChecked={patient.isCecked} hasCheckbox={isEditMode} onSetChecked={handleCheck} />)
-
+                    (<PatientPlate
+                        key={patient.uid}
+                        userData={patient}
+                        isChecked={patient.checked}
+                        hasCheckbox={isEditMode}
+                        onSetChecked={handleCheck} />)
                     :
                     (<Link to={String(patient.id)} key={patient.uid}>
-                        <PatientPlate userData={patient} isChecked={patient.isCecked} hasCheckbox={isEditMode} onSetChecked={handleCheck} />
+                        <PatientPlate
+                            userData={patient}
+                            isChecked={patient.checked}
+                            hasCheckbox={isEditMode}
+                            onSetChecked={handleCheck} />
                     </Link>)
             ))}
         </div>
