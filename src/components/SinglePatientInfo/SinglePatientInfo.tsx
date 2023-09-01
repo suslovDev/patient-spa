@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Outlet, useParams } from 'react-router';
+import { Outlet, useNavigate, useParams } from 'react-router';
 
 import { USERS } from '../../mock/users.mock';
 import { IUserData } from '../../types/IUserData';
@@ -13,6 +13,13 @@ const SinglePatientInfo = (): JSX.Element => {
     const [patientData, setPatientData] = useState<IUserData | undefined>();
 
     const { id } = useParams();
+
+    const navigate = useNavigate();
+    const firstActivePath = 'notes';
+
+    useEffect(() => {
+        navigate(firstActivePath);
+    }, [id]);
 
 
     useEffect(() => {

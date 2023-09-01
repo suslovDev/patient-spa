@@ -16,7 +16,7 @@ export const AppRoutes = (): ReactElement => (
         <Route path="/" element={<HomePage />} />
         <Route path="clients/" element={<PatientsPage />}>
             <Route path=":id/*" element={<SinglePatientInfo />}>
-                <Route path="notes" element={<NoteList />} />
+                <Route index path="notes" element={<NoteList />} />
                 <Route path="consultations" element={<ConsultationList />} />
                 <Route path="videos" element={<VideoList />} />
                 <Route path="events" element={<EventList />} />

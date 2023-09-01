@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 import { AsideActionPanel } from '../../components/AsideActionPanel';
 import { Container } from '../../components/Layout/Container';
@@ -12,6 +12,14 @@ import classes from './PatientsPage.module.scss';
 const Patients = (): JSX.Element => {
     const [isAllChecked, setIsAllChecked] = useState<boolean>(false);
     const [showCheckboxes, setShowCheckboxes] = useState<boolean>(false);
+
+    const navigate = useNavigate();
+    const firstActivePath = USERS[0].id;
+
+    useEffect(() => {
+        navigate(firstActivePath);
+    }, []);
+
 
     const handleCheckedAll = (): void => {
         return null;
