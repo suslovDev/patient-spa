@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { IUserData } from '../../types/IUserData';
@@ -15,12 +16,31 @@ const PatientList = ({
     isEditMode: boolean
 }): JSX.Element => {
 
+    const [data, setData] = useState(patients);
+    useEffect(() => {
+        const withChecked = data?.map((user: any) => {
+            return { ...user, checked: false }
+        });
+        setData(withChecked);
+    }, [])
+
+    const handleCheck = (): void => {
+        return null;
+    }
+
+
+
     return (
         <div className={classes.patientList}>
-            {patients.map((patient: IUserData) => (
-                <Link to={String(patient.id)} key={patient.uid}>
-                    <PatientPlate userData={patient} isChecked={isAllChecked} hasCheckbox={isEditMode} />
-                </Link>
+            {data.map((patient: any) => (
+                isEditMode
+                    ?
+                    (<PatientPlate userData={patient} isChecked={patient.isCecked} hasCheckbox={isEditMode} onSetChecked={handleCheck} />)
+
+                    :
+                    (<Link to={String(patient.id)} key={patient.uid}>
+                        <PatientPlate userData={patient} isChecked={patient.isCecked} hasCheckbox={isEditMode} onSetChecked={handleCheck} />
+                    </Link>)
             ))}
         </div>
     )

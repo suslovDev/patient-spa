@@ -7,23 +7,27 @@ import { Checkbox } from '../UI/Checkbox';
 import classes from './PatientPlate.module.scss';
 
 const PatientPlate = ({
+    onSetChecked,
     hasCheckbox = false,
     isChecked = false,
     extraIcon = null,
     isActive = false,
     userData
 }: {
+    onSetChecked?: any,
     hasCheckbox?: boolean;
     extraIcon?: ReactElement;
     isActive?: boolean;
     isChecked?: boolean;
     userData: IUserData;
 }): JSX.Element => {
-    const { firstName, secondName, avatarUrl } = userData; 
+    const { firstName, secondName, avatarUrl } = userData;
+
+
     return (
         <div className={cn(classes.patient, { [classes.active]: isActive })}>
             <div className={classes.patient__info}>
-                {hasCheckbox && <Checkbox checked={isChecked} />}
+                {hasCheckbox && <Checkbox checked={isChecked} onSetChecked={onSetChecked} />}
                 <div className={classes.patient__avatar}><img src={avatarUrl} alt="Patient avatar" /></div>
                 <p className={classes.patient__name}>{`${firstName} ${secondName}`}</p>
             </div>

@@ -29,7 +29,7 @@ const AsideActionPanel = (
     const renderEditPanel = (): JSX.Element => {
         return (
             <div className={classes.panel}>
-                <div className={classes.panel__count}><Checkbox /><Button>Все</Button><Counter count={213} isActive={true} /></div>
+                <div className={classes.panel__count}><Checkbox checked={true} onSetChecked={() => null} /><Button>Все</Button><Counter count={213} isActive={true} /></div>
                 <div className={classes.panel__actions}><Button>Действия</Button>
                     <Button handleClick={handleOffEdit}>Отменить</Button></div>
             </div>)

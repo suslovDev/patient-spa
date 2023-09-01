@@ -12,3 +12,6 @@ export interface IUserData {
 }
 
 
+export interface IWithCheckboxUserData extends IUserData {
+    checked: boolean;
+}
