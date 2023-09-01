@@ -5,7 +5,7 @@ import Icon from '../Icon/Icon';
 import classes from './Dropdown.module.scss';
 
 
-const Dropdown = ({ items, onSelect }: { items: string[], onSelect?: (value: string) => void }): JSX.Element => {
+const Dropdown = ({ items, onSelect }: { items: string[], onSelect: (value: string) => void }): JSX.Element => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const ref = useRef(null);

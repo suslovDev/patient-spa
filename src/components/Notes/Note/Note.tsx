@@ -22,7 +22,7 @@ const Note = (
                     <span className={classes.note__date}>{date}</span>
                     {content}
                 </p>
-                <Dropdown items={['Изменить', 'Удалить']} />
+                <Dropdown items={['Изменить', 'Удалить']} onSelect={() => null} />
             </article>
             {imageUrl && <WithBorder src={imageUrl} />}
         </section >

@@ -17,7 +17,7 @@ const Patient = ({ userData }: { userData?: IUserData }): JSX.Element => {
                     <p className={classes.patientTextInfo__extraInfo}>{`${ageString(age)} ${sex}`}</p>
                 </div>
             </div>
-            <Dropdown items={['Изменить', 'Удалить']} />
+            <Dropdown items={['Изменить', 'Удалить']} onSelect={() => null} />
         </div>
     )
 }
