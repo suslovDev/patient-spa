@@ -18,7 +18,8 @@ const PatientList = ({
     onSetCount: (count: number) => void
 }): JSX.Element => {
 
-    const [patientsData, setPatientsData] = useState(patients);
+    const [patientsData, setPatientsData] = useState<IUserData[]>(patients);
+
     useEffect(() => {
         const withChecked = patientsData?.map((p) => {
             return { ...p, checked: isAllChecked }
@@ -27,16 +28,14 @@ const PatientList = ({
     }, [isAllChecked]);
 
     useEffect(() => {
-        //@ts-ignore
         const checkedCount = patientsData.reduce((acc, item) => item.checked ? acc + 1 : acc, 0);
         onSetCount(checkedCount);
-    });
+    }, [patientsData]);
 
 
 
     const handleCheck = (id: string): void => {
         const updatedData = patientsData.map(p => {
-            //@ts-ignore
             return p.uid !== id ? p : { ...p, checked: !p.checked }
         })
         setPatientsData(updatedData);
@@ -45,7 +44,7 @@ const PatientList = ({
 
     return (
         <div className={classes.patientList}>
-            {patientsData.map((patient: any) => (
+            {patientsData.map((patient) => (
                 isEditMode
                     ?
                     (<PatientPlate

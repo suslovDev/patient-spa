@@ -9,9 +9,5 @@ export interface IUserData {
     age: number;
     sex: TUserSex;
     avatarUrl: string;
-}
-
-
-export interface IWithCheckboxUserData extends IUserData {
-    checked: boolean;
+    checked?: boolean;
 }

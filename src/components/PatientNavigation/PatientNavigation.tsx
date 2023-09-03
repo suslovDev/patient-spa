@@ -2,12 +2,14 @@
 
 import { useLocation } from 'react-router';
 
+import { IMapPathBtn } from '../../types/IMapPathBtn';
 import Button from '../UI/AddButton/Button';
 import { NavLink } from '../UI/NavLink';
 
 import classes from './PatientNavigation.module.scss';
 
-const MapPathBtn: any = {
+
+const MapPathBtn: IMapPathBtn = {
     notes: 'Новая заметка',
     consultations: 'Записать',
     videos: 'Рекомендовать',
@@ -36,7 +38,7 @@ const PatientNavigation = (): JSX.Element => {
                     <NavLink to="events">Мероприятия</NavLink>
                 </li>
             </ul>
-            <Button variant='add'>{MapPathBtn[curPath]}</Button>
+            <Button variant='add'>{MapPathBtn[curPath as keyof IMapPathBtn]}</Button>
         </div>
     )
 }

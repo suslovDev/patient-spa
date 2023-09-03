@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import classes from './Checkbox.module.scss';
 
-const Checkbox = ({ labelText = null, checked, onSetChecked, }: { labelText?: ReactElement, checked?: boolean, onSetChecked: any }): JSX.Element => {
+const Checkbox = ({ labelText = null, checked, onSetChecked, }: { labelText?: ReactElement, checked?: boolean, onSetChecked: ()=> void }): JSX.Element => {
 
     return (
         <label className={classes.checkbox}>

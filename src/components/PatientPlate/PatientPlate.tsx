@@ -14,7 +14,7 @@ const PatientPlate = ({
     isActive = false,
     userData
 }: {
-    onSetChecked?: any,
+    onSetChecked?: (id: string) => void,
     hasCheckbox?: boolean;
     extraIcon?: ReactElement;
     isActive?: boolean;

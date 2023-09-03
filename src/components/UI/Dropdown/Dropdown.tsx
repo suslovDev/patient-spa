@@ -17,7 +17,7 @@ const Dropdown = ({ items, onSelect }: { items: string[], onSelect: (value: stri
 
     useEffect(() => {
         if (!ref) return;
-        const onBodyClick = (event: any): void=> {
+        const onBodyClick = (event: MouseEvent): void=> {
             if (ref.current && ref.current.contains(event.target)) {
                 return;
             }
